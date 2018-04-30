@@ -1,7 +1,7 @@
 $(function(){
 	function myRequest(url, tipoRequest) {
 		return new Promise((resolve) => {
-			var rawData, data;
+			var rawData, info, data;
 			var request = new XMLHttpRequest();
 			request.open('GET', url, true);
 			request.onload = function() {
@@ -14,8 +14,7 @@ $(function(){
 			request.send();
 		})
 	}
-	
-	function misLlamadas() {
+	function userStatus() {
 		var channel1 = 'castro_1021';
 		var channel2 = 'monstercat';
 		var channel = channel2;
@@ -24,8 +23,10 @@ $(function(){
 		var tipoRequest = '';
 
 		myRequest(url, tipoRequest).then((data) => {
-			console.log(data);
+			var obj = JSON.stringify(data);
+			
+			console.log(obj);
 		});
-	} 
-	misLlamadas();
+	}
+	userStatus();
 });
