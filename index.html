@@ -3,12 +3,13 @@
 <head>
     <title>TwitchTv Status </title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="bemskel\docs\css\bemskel\bemskel.css">
+    <link rel="stylesheet" href="bemskel.css">
+    <link rel="stylesheet" href="bemskel.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="flex-grid" style="width: 950px">
+    <!-- <div class="flex-grid" style="width: 950px">
         <div class="flex-grid__col flex-grid__col--sm">
             <img src="Twitch-Logo.png"> 
         </div>
@@ -20,6 +21,23 @@
     </div>
     <div class="flex-grid__col" id="statusOnline">Online</div>
     <div class="flex-grid__col" id="statusOffline">Offline</div>
+ -->
+    <div class="table-responsive">
+        <table class="table table--striped">
+            <thead>
+                <tr>
+                    <td><img src="Twitch-Logo.png"></td>
+                    <td><div class="flex-grid__col menu">
+                            <a class="button" id="all">All</a>
+                            <a class="button" id="online">Online</a>
+                            <a class="button" id="offline">Offline</a><t
+                        </div>
+                    </td>
+                </tr>
+            </thead>
+          <!-- Usual table markup goes here -->
+        </table>
+    </div>
 </body>   
 </html>
 
