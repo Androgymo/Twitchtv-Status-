@@ -1,6 +1,6 @@
 img {
-	width: 300px;
-	height: 100px;
+	width: 250px;
+	height: 83px;
 }
 
 .container {
@@ -9,7 +9,7 @@ img {
 }
 
 #statusOnline, #statusOffline {
-	width:950px;
+	width: 950px;
 }
 
 #statusOnline {
