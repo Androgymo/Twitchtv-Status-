@@ -1,23 +1,37 @@
 img {
-	width: 250px;
-	height: 83px;
+	width: 185px;
+	height: 61px;
 }
+
+ .table-responsive{
+ 	max-width: 950px;
+ }
 
 .container {
 	display: contents;
 	justify-content: center;
 }
 
+#status {
+	width: 950px;
+	height: 50px;
+}
+
 #statusOnline, #statusOffline {
 	width: 950px;
+	height: 50px;
 }
 
 #statusOnline {
 	background-color: lightgreen;
+	width: 950px;
+	height: 50px;
 }
 
 #statusOffline {
 	background-color: pink;
+	width: 950px;
+	height: 50px;
 }
 
 
